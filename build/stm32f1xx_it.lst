@@ -1,0 +1,306 @@
+ARM GAS  /tmp/ccZOCPSF.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"stm32f1xx_it.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Src/stm32f1xx_it.c"
+  18              		.section	.text.NMI_Handler,"ax",%progbits
+  19              		.align	1
+  20              		.global	NMI_Handler
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  25              	NMI_Handler:
+  26              	.LFB0:
+   1:Src/stm32f1xx_it.c **** #include "stm32f1xx_it.h"
+   2:Src/stm32f1xx_it.c **** #include "globals.h"
+   3:Src/stm32f1xx_it.c **** 
+   4:Src/stm32f1xx_it.c **** void NMI_Handler(void)
+   5:Src/stm32f1xx_it.c **** {
+  27              		.loc 1 5 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.L2:
+   6:Src/stm32f1xx_it.c ****   while (1)
+  34              		.loc 1 6 3 discriminator 1 view .LVU1
+   7:Src/stm32f1xx_it.c ****   {
+   8:Src/stm32f1xx_it.c ****   }
+  35              		.loc 1 8 3 discriminator 1 view .LVU2
+   6:Src/stm32f1xx_it.c ****   while (1)
+  36              		.loc 1 6 9 discriminator 1 view .LVU3
+  37 0000 FEE7     		b	.L2
+  38              		.cfi_endproc
+  39              	.LFE0:
+  41              		.section	.text.HardFault_Handler,"ax",%progbits
+  42              		.align	1
+  43              		.global	HardFault_Handler
+  44              		.syntax unified
+  45              		.thumb
+  46              		.thumb_func
+  48              	HardFault_Handler:
+  49              	.LFB1:
+   9:Src/stm32f1xx_it.c **** }
+  10:Src/stm32f1xx_it.c **** 
+ARM GAS  /tmp/ccZOCPSF.s 			page 2
+
+
+  11:Src/stm32f1xx_it.c **** void HardFault_Handler(void)
+  12:Src/stm32f1xx_it.c **** {
+  50              		.loc 1 12 1 view -0
+  51              		.cfi_startproc
+  52              		@ Volatile: function does not return.
+  53              		@ args = 0, pretend = 0, frame = 0
+  54              		@ frame_needed = 0, uses_anonymous_args = 0
+  55              		@ link register save eliminated.
+  56              	.L4:
+  13:Src/stm32f1xx_it.c ****   while (1)
+  57              		.loc 1 13 3 discriminator 1 view .LVU5
+  14:Src/stm32f1xx_it.c ****   {
+  15:Src/stm32f1xx_it.c ****   }
+  58              		.loc 1 15 3 discriminator 1 view .LVU6
+  13:Src/stm32f1xx_it.c ****   while (1)
+  59              		.loc 1 13 9 discriminator 1 view .LVU7
+  60 0000 FEE7     		b	.L4
+  61              		.cfi_endproc
+  62              	.LFE1:
+  64              		.section	.text.MemManage_Handler,"ax",%progbits
+  65              		.align	1
+  66              		.global	MemManage_Handler
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  71              	MemManage_Handler:
+  72              	.LFB2:
+  16:Src/stm32f1xx_it.c **** }
+  17:Src/stm32f1xx_it.c **** 
+  18:Src/stm32f1xx_it.c **** void MemManage_Handler(void)
+  19:Src/stm32f1xx_it.c **** {
+  73              		.loc 1 19 1 view -0
+  74              		.cfi_startproc
+  75              		@ Volatile: function does not return.
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79              	.L6:
+  20:Src/stm32f1xx_it.c ****   while (1)
+  80              		.loc 1 20 3 discriminator 1 view .LVU9
+  21:Src/stm32f1xx_it.c ****   {
+  22:Src/stm32f1xx_it.c ****   }
+  81              		.loc 1 22 3 discriminator 1 view .LVU10
+  20:Src/stm32f1xx_it.c ****   while (1)
+  82              		.loc 1 20 9 discriminator 1 view .LVU11
+  83 0000 FEE7     		b	.L6
+  84              		.cfi_endproc
+  85              	.LFE2:
+  87              		.section	.text.BusFault_Handler,"ax",%progbits
+  88              		.align	1
+  89              		.global	BusFault_Handler
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  94              	BusFault_Handler:
+  95              	.LFB3:
+  23:Src/stm32f1xx_it.c **** }
+ARM GAS  /tmp/ccZOCPSF.s 			page 3
+
+
+  24:Src/stm32f1xx_it.c **** 
+  25:Src/stm32f1xx_it.c **** void BusFault_Handler(void)
+  26:Src/stm32f1xx_it.c **** {
+  96              		.loc 1 26 1 view -0
+  97              		.cfi_startproc
+  98              		@ Volatile: function does not return.
+  99              		@ args = 0, pretend = 0, frame = 0
+ 100              		@ frame_needed = 0, uses_anonymous_args = 0
+ 101              		@ link register save eliminated.
+ 102              	.L8:
+  27:Src/stm32f1xx_it.c ****   while (1)
+ 103              		.loc 1 27 3 discriminator 1 view .LVU13
+  28:Src/stm32f1xx_it.c ****   {
+  29:Src/stm32f1xx_it.c ****   }
+ 104              		.loc 1 29 3 discriminator 1 view .LVU14
+  27:Src/stm32f1xx_it.c ****   while (1)
+ 105              		.loc 1 27 9 discriminator 1 view .LVU15
+ 106 0000 FEE7     		b	.L8
+ 107              		.cfi_endproc
+ 108              	.LFE3:
+ 110              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 111              		.align	1
+ 112              		.global	UsageFault_Handler
+ 113              		.syntax unified
+ 114              		.thumb
+ 115              		.thumb_func
+ 117              	UsageFault_Handler:
+ 118              	.LFB4:
+  30:Src/stm32f1xx_it.c **** }
+  31:Src/stm32f1xx_it.c **** 
+  32:Src/stm32f1xx_it.c **** void UsageFault_Handler(void)
+  33:Src/stm32f1xx_it.c **** {
+ 119              		.loc 1 33 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ Volatile: function does not return.
+ 122              		@ args = 0, pretend = 0, frame = 0
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125              	.L10:
+  34:Src/stm32f1xx_it.c ****   while (1)
+ 126              		.loc 1 34 3 discriminator 1 view .LVU17
+  35:Src/stm32f1xx_it.c ****   {
+  36:Src/stm32f1xx_it.c ****   }
+ 127              		.loc 1 36 3 discriminator 1 view .LVU18
+  34:Src/stm32f1xx_it.c ****   while (1)
+ 128              		.loc 1 34 9 discriminator 1 view .LVU19
+ 129 0000 FEE7     		b	.L10
+ 130              		.cfi_endproc
+ 131              	.LFE4:
+ 133              		.section	.text.SVC_Handler,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	SVC_Handler
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 140              	SVC_Handler:
+ 141              	.LFB5:
+ARM GAS  /tmp/ccZOCPSF.s 			page 4
+
+
+  37:Src/stm32f1xx_it.c **** }
+  38:Src/stm32f1xx_it.c **** 
+  39:Src/stm32f1xx_it.c **** void SVC_Handler(void)
+  40:Src/stm32f1xx_it.c **** {
+ 142              		.loc 1 40 1 view -0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146              		@ link register save eliminated.
+  41:Src/stm32f1xx_it.c **** }
+ 147              		.loc 1 41 1 view .LVU21
+ 148 0000 7047     		bx	lr
+ 149              		.cfi_endproc
+ 150              	.LFE5:
+ 152              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 153              		.align	1
+ 154              		.global	DebugMon_Handler
+ 155              		.syntax unified
+ 156              		.thumb
+ 157              		.thumb_func
+ 159              	DebugMon_Handler:
+ 160              	.LFB6:
+  42:Src/stm32f1xx_it.c **** 
+  43:Src/stm32f1xx_it.c **** void DebugMon_Handler(void)
+  44:Src/stm32f1xx_it.c **** {
+ 161              		.loc 1 44 1 view -0
+ 162              		.cfi_startproc
+ 163              		@ args = 0, pretend = 0, frame = 0
+ 164              		@ frame_needed = 0, uses_anonymous_args = 0
+ 165              		@ link register save eliminated.
+  45:Src/stm32f1xx_it.c **** }
+ 166              		.loc 1 45 1 view .LVU23
+ 167 0000 7047     		bx	lr
+ 168              		.cfi_endproc
+ 169              	.LFE6:
+ 171              		.section	.text.PendSV_Handler,"ax",%progbits
+ 172              		.align	1
+ 173              		.global	PendSV_Handler
+ 174              		.syntax unified
+ 175              		.thumb
+ 176              		.thumb_func
+ 178              	PendSV_Handler:
+ 179              	.LFB7:
+  46:Src/stm32f1xx_it.c **** 
+  47:Src/stm32f1xx_it.c **** void PendSV_Handler(void)
+  48:Src/stm32f1xx_it.c **** {
+ 180              		.loc 1 48 1 view -0
+ 181              		.cfi_startproc
+ 182              		@ args = 0, pretend = 0, frame = 0
+ 183              		@ frame_needed = 0, uses_anonymous_args = 0
+ 184              		@ link register save eliminated.
+  49:Src/stm32f1xx_it.c **** }
+ 185              		.loc 1 49 1 view .LVU25
+ 186 0000 7047     		bx	lr
+ 187              		.cfi_endproc
+ 188              	.LFE7:
+ 190              		.section	.text.SysTick_Handler,"ax",%progbits
+ARM GAS  /tmp/ccZOCPSF.s 			page 5
+
+
+ 191              		.align	1
+ 192              		.global	SysTick_Handler
+ 193              		.syntax unified
+ 194              		.thumb
+ 195              		.thumb_func
+ 197              	SysTick_Handler:
+ 198              	.LFB8:
+  50:Src/stm32f1xx_it.c **** 
+  51:Src/stm32f1xx_it.c **** void SysTick_Handler(void)
+  52:Src/stm32f1xx_it.c **** {
+ 199              		.loc 1 52 1 view -0
+ 200              		.cfi_startproc
+ 201              		@ args = 0, pretend = 0, frame = 0
+ 202              		@ frame_needed = 0, uses_anonymous_args = 0
+ 203              		@ link register save eliminated.
+  53:Src/stm32f1xx_it.c ****   g_tick++;
+ 204              		.loc 1 53 3 view .LVU27
+ 205              		.loc 1 53 9 is_stmt 0 view .LVU28
+ 206 0000 024A     		ldr	r2, .L15
+ 207 0002 1368     		ldr	r3, [r2]
+ 208 0004 0133     		adds	r3, r3, #1
+ 209 0006 1360     		str	r3, [r2]
+  54:Src/stm32f1xx_it.c **** }
+ 210              		.loc 1 54 1 view .LVU29
+ 211 0008 7047     		bx	lr
+ 212              	.L16:
+ 213 000a 00BF     		.align	2
+ 214              	.L15:
+ 215 000c 00000000 		.word	g_tick
+ 216              		.cfi_endproc
+ 217              	.LFE8:
+ 219              		.text
+ 220              	.Letext0:
+ 221              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 222              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 223              		.file 4 "Inc/globals.h"
+ARM GAS  /tmp/ccZOCPSF.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+     /tmp/ccZOCPSF.s:19     .text.NMI_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:25     .text.NMI_Handler:0000000000000000 NMI_Handler
+     /tmp/ccZOCPSF.s:42     .text.HardFault_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:48     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+     /tmp/ccZOCPSF.s:65     .text.MemManage_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:71     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+     /tmp/ccZOCPSF.s:88     .text.BusFault_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:94     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+     /tmp/ccZOCPSF.s:111    .text.UsageFault_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+     /tmp/ccZOCPSF.s:134    .text.SVC_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:140    .text.SVC_Handler:0000000000000000 SVC_Handler
+     /tmp/ccZOCPSF.s:153    .text.DebugMon_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:159    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+     /tmp/ccZOCPSF.s:172    .text.PendSV_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:178    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+     /tmp/ccZOCPSF.s:191    .text.SysTick_Handler:0000000000000000 $t
+     /tmp/ccZOCPSF.s:197    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+     /tmp/ccZOCPSF.s:215    .text.SysTick_Handler:000000000000000c $d
+
+UNDEFINED SYMBOLS
+g_tick
