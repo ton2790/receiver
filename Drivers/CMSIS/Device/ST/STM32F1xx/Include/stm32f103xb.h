@@ -9893,7 +9893,7 @@ typedef struct
 
 #define IS_ADC_MULTIMODE_MASTER_INSTANCE(INSTANCE) ((INSTANCE) == ADC1)
 
-#define IS_ADC_DMA_CAPABILITY_INSTANCE(INSTANCE) ((INSTANCE) == ADC1)
+#define IS_ADC_DMAABILITY_INSTANCE(INSTANCE) ((INSTANCE) == ADC1)
 
 /****************************** CAN Instances *********************************/    
 #define IS_CAN_ALL_INSTANCE(INSTANCE) ((INSTANCE) == CAN1)
